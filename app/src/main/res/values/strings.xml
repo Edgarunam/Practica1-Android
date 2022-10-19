@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MathApplication</string>
+    <string name="splashTitle">Poincaré</string>
+    <string name="SplashPhrase">El azar no es más que la medida de la ignorancia del hombre</string>
+</resources>
