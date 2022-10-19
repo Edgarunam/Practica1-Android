@@ -23,10 +23,10 @@
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toTopOf="@+id/SplashLogo"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.462"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.55" />
+        app:layout_constraintVertical_bias="0.505" />
 
     <TextView
         android:id="@+id/textPrhase"
@@ -45,7 +45,7 @@
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/SplashLogo"
-        app:layout_constraintVertical_bias="0.27" />
+        app:layout_constraintVertical_bias="0.557" />
 
     <ImageView
         android:id="@+id/SplashLogo"
@@ -59,7 +59,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.333"
+        app:layout_constraintVertical_bias="0.454"
         app:tint="@color/white" />
 
     <ProgressBar
@@ -74,7 +74,7 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/SplashLogo"
-        app:layout_constraintVertical_bias="0.712"
+        app:layout_constraintVertical_bias="0.594"
         tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
