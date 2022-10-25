@@ -2,4 +2,14 @@
     <string name="app_name">MathApplication</string>
     <string name="splashTitle">Poincaré</string>
     <string name="SplashPhrase">El azar no es más que la medida de la ignorancia del hombre</string>
+
+    <string-array name="planets_array">
+        <item>Ecuacion 1</item>
+        <item>Ecuacion 2</item>
+        <item>Ecuacion 3</item>
+
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>
