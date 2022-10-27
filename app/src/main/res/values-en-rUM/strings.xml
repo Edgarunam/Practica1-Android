@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MathApplication</string>
+    <string name="splashTitle">Poincaré</string>
+    <string name="SplashPhrase">" Chance is nothing more than the measure of man's ignorance"</string>
+    <string name="masa">Mass</string>
+    <string name="volumen">Volume</string>
+    <string name="newtons">Newtons</string>
+    <string name="area">m²</string>
+    <string name="fuezalb">Force</string>
+    <string name="areap">Area</string>
+    <string name="aceleration">Acceleration</string>
+    <string name="unidadAceleraion">m/s²</string>
+    <string name="fuerzaBtnt">Force</string>
+    <string name="densidad">Density</string>
+    <string name="volume">m³</string>
+    <string name="Mass">Kg</string>
+    <string name="btnPresion">" Pressure"</string>
+    <string name="fuerzabtn">Force</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="VolumenesNulos">" Null volumes are not supported"</string>
+</resources>

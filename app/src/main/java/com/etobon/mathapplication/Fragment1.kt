@@ -1,5 +1,6 @@
 package com.etobon.mathapplication
 
+import android.content.Intent
 import android.os.Bundle
 import android.text.Editable
 import androidx.fragment.app.Fragment
@@ -22,6 +23,13 @@ class Fragment1 : Fragment(){
     private var _binding: FragmentBlankBinding? = null
     private val binding get() = _binding!!
 
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        arguments?.let {
+
+        }
+    }
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -39,7 +47,7 @@ class Fragment1 : Fragment(){
 
 
         binding.btnDensidad.setOnClickListener {
-
+            val bundle = Bundle()
             var Status: Int = 0
             if (binding.etMasa.text.isEmpty() && binding.etVolumen.text.isNotEmpty()) {
 
@@ -72,7 +80,12 @@ class Fragment1 : Fragment(){
                         binding.Answertv.text = "No se permiten volumenes nulos"
                     }
                     else{
-                        binding.Answertv.text = Density(masa,volumen).toString()
+                        var DensityAns:String = Density(masa,volumen).toString()
+                        bundle.putString("Density", DensityAns)
+                        val intent = Intent(context, Resultado::class.java)
+                        intent.putExtras(bundle)
+                        startActivity(intent)
+
                     }
 
                 }

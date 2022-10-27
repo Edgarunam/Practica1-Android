@@ -1,5 +1,6 @@
 package com.etobon.mathapplication
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -33,6 +34,7 @@ class Formula3 : Fragment() {
     override fun onStart(){
         super.onStart()
         binding.Fuerzabtn.setOnClickListener {
+            val bundle = Bundle()
             var Status: Int = 0
             if (binding.etFuerza.text.isEmpty() && binding.etAceleracion.text.isNotEmpty()) {
 
@@ -60,7 +62,11 @@ class Formula3 : Fragment() {
                     }
 
                     else{
-                        binding.Answertv.text =Fuerza(masa,aceleracion).toString()
+                        var ForceAns:String = Fuerza(masa,aceleracion).toString()
+                        bundle.putString("Fuerza", ForceAns)
+                        val intent = Intent(context, ResultadoFuerza::class.java)
+                        intent.putExtras(bundle)
+                        startActivity(intent)
                     }
 
 

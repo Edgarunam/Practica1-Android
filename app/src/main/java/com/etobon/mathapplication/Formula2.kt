@@ -1,5 +1,6 @@
 package com.etobon.mathapplication
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -33,6 +34,7 @@ class Formula2 : Fragment() {
     override fun onStart() {
         super.onStart()
         binding.btnPresion.setOnClickListener {
+            val bundle = Bundle()
             var Status: Int = 0
             if (binding.etFuerza.text.isEmpty() && binding.etArea.text.isNotEmpty()) {
 
@@ -63,7 +65,12 @@ class Formula2 : Fragment() {
                     }
 
                     else{
-                        binding.Answertv.text = Presion(fuerza,area).toString()
+
+                        var PressureAns:String = Presion(fuerza,area).toString()
+                        bundle.putString("Pressure", PressureAns)
+                        val intent = Intent(context, ResultadoPresion::class.java)
+                        intent.putExtras(bundle)
+                        startActivity(intent)
                     }
 
                 }

@@ -21,9 +21,17 @@
     <string name="unidadAceleraion">m/s²</string>
     <string name="fuerzaBtnt">Fuerza</string>
     <string name="densidad">Densidad</string>
-    <string name="volume">m^3</string>
+    <string name="volume">m³</string>
     <string name="Mass">Kg</string>
     <string name="btnPresion">Presion</string>
     <string name="fuerzabtn">Fuerza</string>
+    <string name="VolumenesNulos">No se admiten Volumenes nulos</string>
+    <string name="Return">Volver</string>
+    <string name="UnidadDensidad">Kg/m³</string>
+    <string name="la_presion_es">La Densidad es:</string>
+    <string name="unidadPresion">N/m²</string>
+    <string name="PresionResultaText">La Presion es:</string>
+    <string name="FueraSt">La Fuerza es:</string>
+    <string name="n">N</string>
 
 </resources>
