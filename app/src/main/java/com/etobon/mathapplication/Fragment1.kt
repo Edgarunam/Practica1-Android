@@ -38,11 +38,10 @@ class Fragment1 : Fragment(){
 
 
 
-        binding.button2.setOnClickListener {
+        binding.btnDensidad.setOnClickListener {
 
             var Status: Int = 0
             if (binding.etMasa.text.isEmpty() && binding.etVolumen.text.isNotEmpty()) {
-                binding.etMasa.setBackgroundColor(10)
 
                 Status = 1
 
