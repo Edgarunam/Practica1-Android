@@ -30,7 +30,7 @@ class Formula3 : Fragment() {
         return view
     }
 
-    override fun onStart() {
+    override fun onStart(){
         super.onStart()
         binding.Fuerzabtn.setOnClickListener {
             var Status: Int = 0
@@ -55,10 +55,19 @@ class Formula3 : Fragment() {
                 else -> {
                     var masa: Float = binding.etFuerza.text.toString().toFloat()
                     var aceleracion:Float = binding.etAceleracion.text.toString().toFloat()
-                    binding.Answertv.text =Fuerza(masa,aceleracion).toString()
+                    if(masa < 0 ){
+                        binding.Answertv.text = "No se permiten masas negativas"
+                    }
+
+                    else{
+                        binding.Answertv.text =Fuerza(masa,aceleracion).toString()
+                    }
+
+
                 }
 
-            }
+
+        }
         }
 
 
@@ -75,5 +84,6 @@ class Formula3 : Fragment() {
         return masaInput * aceleracionInput
 
     }
+
 
 }

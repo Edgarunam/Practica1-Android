@@ -55,7 +55,17 @@ class Formula2 : Fragment() {
                 else -> {
                     var fuerza: Float = binding.etFuerza.text.toString().toFloat()
                     var area:Float = binding.etArea.text.toString().toFloat()
-                    binding.Answertv.text = Presion(fuerza,area).toString()
+                    if(area < 0 ){
+                        binding.Answertv.text = "No se permiten areas negativas"
+                    }
+                    else if(area == 0.toFloat() ){
+                        binding.Answertv.text = "No se permiten areas nulas"
+                    }
+
+                    else{
+                        binding.Answertv.text = Presion(fuerza,area).toString()
+                    }
+
                 }
 
             }

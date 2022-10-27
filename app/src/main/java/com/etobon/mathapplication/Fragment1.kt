@@ -62,7 +62,19 @@ class Fragment1 : Fragment(){
                 else -> {
                     var masa: Float = binding.etMasa.text.toString().toFloat()
                     var volumen:Float = binding.etVolumen.text.toString().toFloat()
-                    binding.Answertv.text = Density(masa,volumen).toString()
+                    if(masa < 0 ){
+                        binding.Answertv.text = "No se permiten masas negativas"
+                    }
+                    else if(volumen < 0 ){
+                        binding.Answertv.text = "No se permiten volumenes Negativos"
+                    }
+                    else if(volumen == 0.toFloat() ){
+                        binding.Answertv.text = "No se permiten volumenes nulos"
+                    }
+                    else{
+                        binding.Answertv.text = Density(masa,volumen).toString()
+                    }
+
                 }
 
 
