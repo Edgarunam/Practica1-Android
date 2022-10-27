@@ -31,7 +31,7 @@ class MainActivity2 : AppCompatActivity() {
 
         supportFragmentManager.beginTransaction().add(R.id.MainActivity2, fragment1).commit()
 
-        val lista = listOf("Formula 1", "Formula 2","Formula 3")
+        val lista = listOf("Densidad", "Presion","Fuerza")
         val adaptador = ArrayAdapter(this, android.R.layout.simple_spinner_item, lista)
 
         spinner.adapter = adaptador
